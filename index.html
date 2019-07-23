@@ -1,93 +1,388 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Coming Soon Page</title>
-        <meta name="description" content="">
-		
-		<!-- responsive viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EmjaySolutions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="referrer" content="origin" />
+  </head>
 
-		<!-- Place favicon.ico in the root directory -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png"> 
-
-        <!-- bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		
-		<!-- FontAwesome css -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        
-        <!--  CSS3 Animition css -->
-        <link rel="stylesheet" href="css/ain-css.css">
-         
-		<!-- style css -->
-        <link rel="stylesheet" href="style.css">
-		
-		<!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-       
-         <!-- Start Coming Soon Page One -->
-        <div class="comming-soon-area text-center">
-            <div class="display-table">
-                <div class="display-table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="coming-text text-center">
-                                        <h1>Website temporarily under maintenance</h1>
-                                        <p>Please check back soon!!!</p>
-                                </div>
-                                <!--<div class="countdown">
-                                    <div class="simply-countdown-losange" id="simply-countdown-losange"></div>
-                                </div>-->
-
-                              <div class="social-icon text-center">
-                                  <a href="https://www.facebook.com/emjaynotmj" target="_blank"><i class="fa fa-facebook"></i></a>
-                                  <a href="https://twitter.com/emjaynotmj" target="_blank" class="one"><i class="fa fa-twitter"></i></a>
-                                  <a href="https://www.linkedin.com/in/emjaynotmj/" target="_blank" class="two"><i class="fa fa-linkedin"></i></a>
-                                  <a href="https://github.com/emjaynotmj" target="_blank" class="three"><i class="fa fa-github"></i></a>
-                              </div>
-                            </div>
-                        </div>
+  <body>
+    <div class="overflow-wrap">
+      <!-- HOME -->
+      <section id="home" class="flex height-fix">
+        <div id="pt" class="canvas"></div>
+        <div class="flex">
+          <div class="text">
+            Hello, I'm <span class="highlight">Abdulmujeeb Jamiu</span>.
+            <br />
+            I'm a full-stack web developer.
+          </div>
+          <a href="#portfolio">
+            <div class="button page-link" dest="portfolio">
+              View my work <i class="mdi mdi-arrow-right"></i>
             </div>
-                </div>
+          </a>
+
+          <nav class="flex desk">
+            <div class="link-wrap">
+              <div class="page-link active" dest="home">home</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="portfolio">portfolio</div>
+              <div class="page-link" dest="contact">contact</div>
             </div>
+            <i class="mdi mdi-menu"></i>
+          </nav>
         </div>
-        <!-- End Coming Soon Page One -->
-        
-       <!-- Latest jQuery -->
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/modernizr-2.8.3.min.js"></script>
-        
-        <!-- Simple Counter jQuery -->
-		<script src="js/simplyCountdown.min.js"></script>
-		
-      <!-- Counter Active jQuery -->
-       <script>
-        var d = new Date(new Date().getTime() + 1099 * 120 * 120 * 2000);
-           //jQuery Counter
-        $('#simply-countdown-losange').simplyCountdown({
-            year: d.getFullYear(),
-            month: d.getMonth() + 1,
-            day: d.getDate(),
-            enableUtc: false
-            //year: 2015, // required
-           // month: 6, // required
-            //day: 30, // required
-            /* Options here */
-        });
-    </script>
-    
-		<!-- bootstrap jQuery -->
-        <script src="js/bootstrap.min.js"></script>
-      
-		<!-- Theme jQuery -->
-        <script src="js/main.js"></script>
-    </body>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container flex">
+          <div
+            class="header waypoint animated slide-in-left"
+            data-animation="slide-in-left"
+          >
+            ABOUT
+          </div>
+          <div
+            class="header-bar waypoint animated slide-in-left"
+            data-animation="slide-in-left"
+            data-delay=".5s"
+            style="animation-delay: 0.5s;"
+          ></div>
+
+          <div class="skills-wrapper flex row-gt-sm">
+            <div
+              class="flex flex-50-gt-sm waypoint animated slide-in-left"
+              data-animation="slide-in-left"
+            >
+              <img src="img/AbdulmujeebJamiu.JPG" class="me" />
+              <div class="label bold">Who's this guy?</div>
+              <div>
+                I am a passionate software developer in love with solving
+                problems and fixing bugs on
+                <br />
+                <a
+                  class="highlight"
+                  href="https://www.codementor.io/emjaynotmj"
+                  target="_blank"
+                  >Codementor</a
+                >.
+                <br />
+                A Senior Full-Stack Software Engineer with 7+ years experience.
+                Experienced with Software Development Methodologies, converts
+                user stories into well-written, thoroughly-tested, non-
+                redundant and efficient lines of code, resulting in lovable
+                products with good user experience while taking care of all
+                possible edge cases.
+                <br />
+                I don’t just develop software, I do it with utmost
+                attention-to-detail.
+                <br />
+                <span class="page-link highlight" dest="contact">
+                  Let's make something special.
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-50-gt-sm waypoint bars-wrap animated slide-in-right"
+              data-animation="slide-in-right"
+            >
+              <div class="bar flex">
+                <div class="bar fill" style="width:85%">
+                  <div class="tag bold flex">JavaScript</div>
+                </div>
+                <span>90%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:85%">
+                  <div class="tag bold flex">JavaScript</div>
+                </div>
+                <span>90%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:65%">
+                  <div class="tag bold flex">React</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">JavaScript</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:65%">
+                  <div class="tag bold flex">Angular</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:55%">
+                  <div class="tag bold flex">Node.js</div>
+                </div>
+                <span>50%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:65%">
+                  <div class="tag bold flex">Ruby/Rails</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:55%">
+                  <div class="tag bold flex">UI Design</div>
+                </div>
+                <span>50%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:60%">
+                  <div class="tag bold flex">Photoshop</div>
+                </div>
+                <span>60%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:45%">
+                  <div class="tag bold flex">Illustrator</div>
+                </div>
+                <span>40%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK EXPERIENCE -->
+      <section id="portfolio">
+        <div class="container flex">
+          <div
+            class="header waypoint animated slide-in-left"
+            data-animation="slide-in-left"
+          >
+            WORK EXPERIENCE
+          </div>
+          <div
+            class="header-bar waypoint animated slide-in-left"
+            data-animation="slide-in-left"
+            data-delay=".5s"
+            style="animation-delay: 0.5s;"
+          ></div>
+
+          <div class="flex row wrap">
+            <div class="flex row-gt-sm">
+              <div
+                class="portfolio-wrap waypoint animated fade-in"
+                data-animation="fade-in"
+              >
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-1"></div>
+                  <div class="label bold">CodeMentor</div>
+                  <div class="date">June 2017 – Present</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    <strong>Senior Freelance Software Engineer/Mentor</strong>
+                    <br />
+                    • HelpsMenteesonSoftware-Developmentrelatedissues. <br />
+                    • Helps build ground-breaking/solution-oriented software in
+                    an efficient manner.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="portfolio-wrap waypoint animated fade-in"
+                data-animation="fade-in"
+                data-delay=".4s"
+                style="animation-delay: 0.4s;"
+              >
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-3"></div>
+                  <div class="label bold">Andela</div>
+                  <div class="date">July 2016 – July 2018</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    <strong>Software Developer</strong><br />
+                    • Developed software and platforms used byAndela staff
+                    /employees internally.
+                    <br />
+                    • Built software and platforms for Andela partners.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex row-gt-sm">
+              <div
+                class="portfolio-wrap waypoint animated fade-in"
+                data-animation="fade-in"
+                data-delay=".6s"
+                style="animation-delay: 0.6s;"
+              >
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-4"></div>
+                  <div class="label bold">Emjay Solutions</div>
+                  <div class="date">Nov 2011 – Present</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    <strong>Chief Technical Officer</strong><br />
+                    • Lead the Technical /Engineering team in building and
+                    maintaining software applications. <br />
+                    • Lead the Technical /Engineering team in building
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="portfolio-wrap nivi waypoint animated fade-in"
+                data-animation="fade-in"
+                data-delay=".2s"
+                style="animation-delay: 0.2s;"
+              >
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-2"></div>
+                  <div class="label bold">Nivi</div>
+                  <div class="date">July 2017 – June 2018</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    <strong>Software Developer</strong><br />
+                    • Development of SMS and IVR systems for easy access to
+                    Family Planning. <br />
+                    • Integration of Support systems for easy tracking of user
+                    needs.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
+          height="75"
+          width="100%"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svgcolor-light"
+        >
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <div class="container flex">
+          <div
+            class="header waypoint animated slide-in-left"
+            data-animation="slide-in-left"
+          >
+            CONTACT
+          </div>
+          <div
+            class="header-bar waypoint animated slide-in-right"
+            data-animation="slide-in-right"
+            data-delay=".25s"
+            style="animation-delay: 0.25s;"
+          ></div>
+          <div
+            class="highlight waypoint animated slide-in-right"
+            data-animation="slide-in-right"
+            data-delay=".5s"
+            style="animation-delay: 0.5s;"
+          >
+            Have a question or want to work together?
+          </div>
+          <form
+            class="waypoint animated pop-in"
+            data-animation="pop-in"
+            data-delay=".5s"
+            id="contact-form"
+            style="animation-delay: 0.5s;"
+          >
+            <input placeholder="Name" type="text" id="name" required="" />
+            <input
+              placeholder="Enter email"
+              type="email"
+              id="email"
+              required=""
+            />
+            <textarea
+              placeholder="Your Message"
+              type="text"
+              id="message"
+            ></textarea>
+            <div id="success">
+              <div></div>
+            </div>
+            <input class="button" type="submit" id="submit" value="SUBMIT" />
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <a href="#home">
+          <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+        </a>
+
+        <div class="icon-wrap flex row">
+          <a href="https://www.codementor.io/emjaynotmj">
+            <div class="flex icon" id="icon-1">
+              <img
+                class="codementor"
+                src="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/39/38/17/393817aa-d1d5-9571-b323-0743a22eb1b8/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/246x0w.jpg"
+                style="background-color: #003648;"
+                alt="codementor-img"
+              />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/emjaynotmj/">
+            <div class="flex icon" id="icon-2">
+              <i class="mdi mdi-linkedin"></i>
+            </div>
+          </a>
+          <a href="https://github.com/emjaynotmj">
+            <div class="flex icon" id="icon-5">
+              <i class="mdi mdi-github-circle"></i>
+            </div>
+          </a>
+          <a href="https://twitter.com/emjaynotmj">
+            <div class="flex icon" id="icon-3">
+              <i class="mdi mdi-twitter"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="footnote">
+            ABDULMUJEEB JAMIU <span class="highlight">©2019</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/canvas.js"></script>
+  </body>
 </html>
