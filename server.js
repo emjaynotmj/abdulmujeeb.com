@@ -10,9 +10,8 @@ app.use(express.json());
 
 app.post("/email", (req, res) => {
   const { name, email, message } = req.body;
-  sendMail(name, email, message, function(err, data) {
+  sendMail(name, email, message, (err, data) => {
     if (err) {
-      console.log("err", err)
       res.status(500).json({ message: "Ops! An error occured" });
     } else {
       res.json({ message: "Your message was sent successfully. Thanks!" });
