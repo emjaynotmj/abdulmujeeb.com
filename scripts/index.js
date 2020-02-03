@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
   var isMobile;
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -8,7 +8,7 @@ $(function() {
     isMobile = true;
 
     // Mobile height fix
-    $(".height-fix").each(function() {
+    $(".height-fix").each(function () {
       var h = $(this).height();
       $(this).height(h);
     });
@@ -26,7 +26,7 @@ $(function() {
   var lastPos = 0;
   var lockTimer;
 
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     var pos = $(window).scrollTop();
     var pos2 = pos + 50;
     var scrollBottom = pos + $(window).height();
@@ -64,7 +64,7 @@ $(function() {
       $("body").addClass("disable-hover");
     }
 
-    lockTimer = setTimeout(function() {
+    lockTimer = setTimeout(function () {
       $("body").removeClass("disable-hover");
     }, 500);
   });
@@ -77,7 +77,7 @@ $(function() {
   }
 
   // EVENT HANDLERS
-  $(".page-link").click(function() {
+  $(".page-link").click(function () {
     var anchor = $(this).attr("dest");
     $(".link-wrap").removeClass("visible");
 
@@ -94,18 +94,18 @@ $(function() {
     );
   });
 
-  $(".mdi-menu").click(function() {
+  $(".mdi-menu").click(function () {
     $(".link-wrap").toggleClass("visible");
   });
 
   $(".experience-wrap").hover(
-    function() {
+    function () {
       $(".experience-wrap")
         .not(this)
         .addClass("fade");
       $(this).addClass("hover");
     },
-    function() {
+    function () {
       $(this).removeClass("hover");
       $(".experience-wrap").removeClass("fade");
     }
@@ -116,40 +116,42 @@ $(function() {
     e.preventDefault();
     const recaptchaToken = document.getElementById('g-recaptcha-response').value;
     if (recaptchaToken) {
-    const name = $("#name")
-      .val()
-      .trim();
-    const email = $("#email")
-      .val()
-      .trim();
-    const message = $("#message")
-      .val()
-      .trim();
+      const name = $("#name")
+        .val()
+        .trim();
+      const email = $("#email")
+        .val()
+        .trim();
+      const message = $("#message")
+        .val()
+        .trim();
 
-    const data = {
-      name,
-      email,
-      message
-    };
+      const data = {
+        name,
+        email,
+        message
+      };
 
-    $.post("/email", data, function() {
-      console.log("server received our data");
-      $("#contact-form")
-        .find("input[type=text], input[type=email], textarea")
-        .val("");
-    }).done(function(response) {
-      console.log("res heere", response);
-      $("#success").html("");
-      $("#success")
-        .addClass("expand")
-        .append(response.message, "<i id='close' class='mdi mdi-close'></i>");
+      $.post("/email", data, function () {
+        console.log("server received our data");
+        $("#contact-form")
+          .find("input[type=text], input[type=email], textarea")
+          .val("");
+      }).done(function (response) {
+        console.log("res heere", response);
+        $("#success").html("");
+        $("#success")
+          .addClass("expand")
+          .append(response.message, "<i id='close' class='mdi mdi-close'></i>");
 
-      $("#close").click(function() {
-        $("#success").removeClass("expand");
+        $("#close").click(function () {
+          $("#success").removeClass("expand");
+        });
       });
-    });      
     } else {
       alert('No offence, but I\'ll like to deal with Humans only :) \n\n Tick the checkbox to confirm you are one!')
     }
   });
+
+  $('#current-year').html(`©${new Date().getFullYear()}`)
 });
